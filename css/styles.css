@@ -354,11 +354,6 @@ img {
   margin-bottom: 16px;
 }
 
-.footer-social-list {
-  display: flex;
-  gap: 16px;
-}
-
 .social-item {
   width: 40px;
   height: 40px;
@@ -375,7 +370,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Ховер/фокус для футера - зеленый цвет */
+/* Ховер/фокус для футера - зелений колір */
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
@@ -389,7 +384,7 @@ img {
   height: 300px;
 }
 
-/* Исправления для SVG иконок */
+/* Виправлення для SVG іконок */
 .advantages-icon {
   display: flex;
   align-items: center;
@@ -417,11 +412,6 @@ img {
   gap: 24px;
 }
 
-.social-item {
-  width: 40px;
-  height: 40px;
-}
-
 .social-link {
   display: flex;
   align-items: center;
@@ -433,6 +423,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Ховер/фокус для третьої секції - синій колір */
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
@@ -442,6 +433,12 @@ img {
   fill: #f4f4fd;
   width: 16px;
   height: 16px;
+}
+
+/* Блок для footer-social-list розміщений нижче для коректної каскадності */
+.footer-social-list {
+  display: flex;
+  gap: 16px;
 }
 
 .portfolio-overlay {
