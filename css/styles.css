@@ -178,6 +178,9 @@ img {
 .advantages {
   padding: 120px 0;
 }
+.advantages-icon{
+  border: 1px solid #8e8f99;
+}
 
 .advantages-list {
   display: flex;
@@ -186,7 +189,6 @@ img {
 
 .advantages-item {
   width: calc((100% - 72px) / 4);
-  border: 1px solid #8e8f99;
   border-radius: 4px;
   padding: 24px;
   background-color: #ffffff;
