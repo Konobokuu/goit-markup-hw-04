@@ -341,6 +341,7 @@ img {
 .portfolio-item img {
   height: 300px;
 }
+
 .advantages-icon {
   display: flex;
   align-items: center;
@@ -381,4 +382,19 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: #31d0aa;
+}
+
+.advantages-icon svg,
+.social-link svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.advantages-icon svg {
+  color: #2e2f42;
+}
+
+.social-link svg {
+  color: #f4f4fd;
 }
