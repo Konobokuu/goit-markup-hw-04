@@ -186,9 +186,6 @@ img {
 
 .advantages-item {
   width: calc((100% - 72px) / 4);
-  border-radius: 4px;
-  padding: 24px;
-  background-color: #ffffff;
 }
 
 .advantages-subtitle {
@@ -359,7 +356,7 @@ img {
 
 .footer-social-list {
   display: flex;
-  gap: 16px; 
+  gap: 16px;
 }
 
 .social-item {
@@ -378,13 +375,10 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Ховер/фокус для футера - зеленый цвет */
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
-}
-
-.social-icon {
-  fill: #f4f4fd;
 }
 
 .team-item img {
@@ -395,6 +389,7 @@ img {
   height: 300px;
 }
 
+/* Исправления для SVG иконок */
 .advantages-icon {
   display: flex;
   align-items: center;
@@ -404,6 +399,12 @@ img {
   border-radius: 4px;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
+}
+
+.advantages-icon svg {
+  width: 64px;
+  height: 64px;
+  fill: #2e2f42;
 }
 
 .social-list {
@@ -432,25 +433,15 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .social-link:hover,
 .social-link:focus {
-  background-color: #404bbf; 
-}
-
-.advantages-icon svg,
-.social-icon {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.advantages-icon svg {
-  color: #2e2f42;
+  background-color: #404bbf;
 }
 
 .social-icon {
   fill: #f4f4fd;
+  width: 16px;
+  height: 16px;
 }
 
 .portfolio-overlay {
