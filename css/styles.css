@@ -438,10 +438,6 @@ img {
 .social-link:focus {
   background-color: #31d0aa;
 }
-.social-icon-team:hover,
-.social-icon-team:focus{
-  background-color: #404bbf;
-}
 
 .advantages-icon svg,
 .social-icon {
