@@ -1,7 +1,18 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --success-color: #31d0aa;
+  --main-white: #ffffff;
+  --light-mode: #f4f4fd;
+  --subtle-text: #8e8f99;
+  --dark-color: #2e2f42;
+  --text-color: #434455;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--text-color);
+  background-color: var(--main-white);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -69,17 +80,17 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--primary-brand);
   margin-right: 76px;
 }
 
 .logo-accent {
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
 .nav-link {
   font-weight: 500;
-  color: #2e2f42;
+  color: var(--dark-color);
   display: block;
   padding: 24px 0;
   position: relative;
@@ -88,11 +99,11 @@ img {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .nav-link.active {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .nav-link.active::after {
@@ -102,7 +113,7 @@ img {
   bottom: -1px;
   width: 100%;
   height: 4px;
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
   border-radius: 2px;
 }
 
@@ -117,7 +128,7 @@ img {
 }
 
 .address-link {
-  color: #434455;
+  color: var(--text-color);
   display: block;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -125,7 +136,7 @@ img {
 
 .address-link:hover,
 .address-link:focus {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .hero {
@@ -146,7 +157,7 @@ img {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  color: #ffffff;
+  color: var(--main-white);
   letter-spacing: 0.02em;
   margin-bottom: 48px;
   max-width: 496px;
@@ -155,8 +166,8 @@ img {
 }
 
 .hero-button {
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--primary-brand);
+  color: var(--main-white);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -172,7 +183,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
 }
 
 .advantages {
@@ -186,20 +197,20 @@ img {
 
 .advantages-item {
   width: calc((100% - 72px) / 4);
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtle-text);
 }
 
 .advantages-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color: var(--dark-color);
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
 .advantages-text {
-  color: #434455;
+  color: var(--text-color);
 }
 
 .visually-hidden {
@@ -216,7 +227,7 @@ img {
 }
 
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--light-mode);
   padding: 120px 0;
 }
 
@@ -225,7 +236,7 @@ img {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--dark-color);
   letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
@@ -236,7 +247,7 @@ img {
 }
 
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--main-white);
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -258,13 +269,13 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color: var(--dark-color);
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
 .team-position {
-  color: #434455;
+  color: var(--text-color);
   margin-bottom: 8px;
 }
 
@@ -277,7 +288,7 @@ img {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--dark-color);
   letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
@@ -309,26 +320,26 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color: var(--dark-color);
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
 .portfolio-text {
-  color: #434455;
+  color: var(--text-color);
 }
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--dark-color);
   padding: 100px 0;
 }
 
-.footer-content {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-info {
+.footer-logo-wrapper {
   margin-right: 120px;
 }
 
@@ -338,51 +349,51 @@ img {
 }
 
 .logo-accent-footer {
-  color: #f4f4fd;
+  color: var(--light-mode);
 }
 
-.footer-desc {
-  color: #f4f4fd;
+.footer-text {
+  color: var(--light-mode);
   max-width: 264px;
 }
 
-.footer-social-title {
-  color: #ffffff;
+.social-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--main-white);
   margin-bottom: 16px;
 }
 
-.footer-social-list {
+.social-list {
   display: flex;
   gap: 16px;
 }
 
-.footer-social-item {
+.social-item {
   width: 40px;
   height: 40px;
 }
 
-.footer-social-link {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: #31d0aa;
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--success-color);
 }
 
-.footer-social-icon {
-  fill: #f4f4fd;
+.social-icon {
+  fill: var(--light-mode);
 }
 
 .team-item img {
@@ -398,7 +409,7 @@ img {
   align-items: center;
   justify-content: center;
   height: 112px;
-  background-color: #f4f4fd;
+  background-color: var(--light-mode);
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -424,14 +435,14 @@ img {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
 }
 
 .advantages-icon svg,
@@ -442,11 +453,11 @@ img {
 }
 
 .advantages-icon svg {
-  color: #2e2f42;
+  color: var(--dark-color);
 }
 
 .social-icon {
-  fill: #f4f4fd;
+  fill: var(--light-mode);
 }
 
 .portfolio-overlay {
@@ -460,9 +471,9 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--light-mode);
   padding: 40px 32px;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand);
   height: 100%;
   width: 100%;
   transform: translateY(100%);
